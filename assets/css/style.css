@@ -1,1 +1,616 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Slab:wght@100;300;400;500;600;700;800;900&display=swap');
+
+/* ----- Common Styles ----- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  outline: 0;
+  font-family: 'Montserrat', 'Roboto Slab', sans-serif;
+}
+
+button img {
+  width: 90px;
+  height: 40px;
+  display: flex;
+  border: 0;
+  border-radius: 4px;
+}
+
+/* ----- Container ----- */
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (min-width: 1px) {
+
+  .container {
+    padding: 0px 20px;
+  }
+
+}
+
+@media (min-width: 360px) {
+  .container {
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 576px) {
+
+  .container {
+    max-width: 540px;
+  }
+
+}
+
+@media (min-width: 768px) {
+
+  .container {
+    max-width: 720px;
+  }
+
+}
+
+@media (min-width: 992px) {
+
+  .container {
+    padding: 0px 15px;
+  }
+
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .container {
+    padding: 0px 20px;
+  }
+
+  .container {
+    max-width: 1140px;
+    
+  }
+}
+
+/* ----- Typography ----- */
+
+h3 {
+  font-size: 24px;
+}
+
+/* ------ Header adaptive ------ */
+
+@media (min-width: 1px) {
+
+  .header {
+    padding: 32px 0px 33.32px;
+    background-color: #27AE60;
+  }
+
+  .header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  /* --- Logo --- */
+
+  .header__logo img:first-child {
+    display: none;
+  }
+
+  .header__logo img:last-child {
+    width: 80px;
+    height: 24.68px;
+  }
+
+  /* --- Logo end */
+
+
+  /* --- Contacting --- */
+
+  .contacting {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header__number {
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.2;
+    font-weight: 600;
+    color: #ffffff;
+  }
+  
+  .works-hours {
+    text-align: center;
+    font-size: 8px;
+    line-height: 1.2;
+    font-weight: 300;
+    color: #ffffff;
+  }
+
+  /* --- Contacting end */
+
+
+  /* --- Burger --- */
+
+  .header__burger {
+    position: relative;
+    width: 24px;
+    height: 19px;
+    cursor: pointer;
+  }
+
+  .header__burger span {
+    background-color: #ffffff;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    top: 8px;
+    left: 0;
+    transition: .3s linear;
+    border-radius: 4px;
+  }
+
+  .header__burger::before,
+  .header__burger::after {
+    content: '';
+    background-color: #ffffff;
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    left: 0;
+    transition: .3s linear;
+    border-radius: 4px;
+  }
+
+  .header__burger::before {
+    top: 0px;
+  }
+
+  .header__burger::after {
+    bottom: 0px;
+  }
+
+  /* --- Burger end --- */
+
+}
+
+@media (min-width: 576px) {
+
+  .header {
+    padding: 24px 0px 23px;
+  }
+
+  /* --- Burger --- */
+
+  .header__burger {
+    width: 35px;
+  }
+
+  /* --- Burger end --- */
+
+}
+
+@media (min-width: 768px) {
+
+  /* --- Logo --- */
+
+  .header__logo {
+    display: flex;
+  }
+
+  .header__logo img:last-child {
+    width: 140px;
+    height: 43px;
+  }
+
+  /* --- Logo end --- */
+
+
+  /* --- Contacting --- */
+
+  .header__number {
+    margin-bottom: 0px;
+    font-size: 24px;
+    line-height: 1.2;
+  }
+  
+  .works-hours {
+    font-size: 12px;
+  }
+
+  /* --- Contacting end */
+
+
+  /* --- Burger --- */
+
+  .header__burger {
+    width: 50px;
+    height: 24px;
+  }
+
+  .header__burger span {
+    top: 10px;
+  }
+
+  .header__burger span,
+  .header__burger::before,
+  .header__burger::after {
+    height: 4px;
+  }
+
+  /* --- Burger end --- */
+
+}
+
+/* ----- Main version ----- */
+
+@media (max-width: 1200px) {
+  nav {
+    display: none;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  .header {
+    padding: 0px;
+  }
+
+  /* --- Logo --- */
+
+  .header__logo {
+    align-items: center;
+  }
+
+  .header__logo img:first-child {
+    display: flex;
+    margin-right: 22.52px
+  }
+
+  /* --- Logo end --- */
+
+
+  /* --- Navigation --- */
+
+  nav {
+    display: flex;
+  }
+
+  .navigation__list {
+    display: flex;
+  }
+
+  .list__item a {
+    display: flex;
+    padding: 34px 15px;
+    color: #ffffff;
+    transition: .2s linear;
+  }
+
+  .list__item:hover {
+    background-color: #239C56;
+    transition: .2s linear;
+  }
+
+  .submenu {
+    display: none;
+  }
+
+  .list__item:first-child:hover .submenu {
+    top: 87px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+  }
+
+  .submenu__item a {
+    display: block;
+    padding: 18px 30px;
+    background-color: grey;
+    border-bottom: 1px solid #ffffff;
+  }
+
+  .submenu__item a:hover {
+    background-color: rgb(151, 151, 151);
+  }
+
+  /* --- Navigation end --- */
+
+
+  /* --- Burger --- */
+
+  .header__burger {
+    display: none;
+  }
+
+  /* --- Burger end ---  */
+
+}
+
+
+
+/* ----- Footer adaptive ----- */
+
+@media (min-width: 1px) {
+
+  .footer {
+    padding: 50px 0px;
+    background-color: #1C222C;
+    color: #ffffff;
+  }
+
+  .footer__container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  /* --- Details ---  */
+
+  .footer h3, 
+  .footer p {
+    margin-bottom: 15px;
+  }
+
+  .footer p {
+    font-weight: 300;
+  }
+
+  .details__street {
+    max-width: 212px;
+    margin: 0 auto 15px;
+    line-height: 1.3;
+  }
+
+  .footer p:last-child {
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  .footer a {
+    display: flex;
+    margin-bottom: 15px;
+    justify-content: center;
+    font-weight: 300;
+    color: inherit;
+    transition: .2s linear;
+  }
+
+  .footer a:hover {
+    color: #27AE60;
+    transition: .2s linear;
+  }
+
+  .info__link.info__link-3 {
+    margin-bottom: 30px;
+  }
+
+  .price__link.price__link-3 {
+    margin-bottom: 30px;
+  }
+
+  /* --- Details end --- */
+
+
+  /* -- Number */
+
+  .phone {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  footer a.number {
+    margin-bottom: 0px;
+    font-size: 24px;
+    line-height: 1.2;
+    color: #27AE60;
+    font-weight: 700;
+  }
+
+  /* --- Number end */
+
+
+  /* --- Social icons --- */
+
+  .social {
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .social__icons {
+    margin-bottom: 30px;
+  }
+
+  .social__list {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .social a {
+    width: 40px;
+    height: 40px;
+  }
+
+  .social .number {
+    width: auto;
+    height: auto;
+  }
+
+  .facebook {
+    background: url(../svg/facebook.svg) no-repeat;
+  }
+
+  .facebook:hover {
+    background: url(../svg/facebook-hover.svg) no-repeat;
+  }
+
+  .vk {
+    background: url(../svg/vk.svg) no-repeat;
+  }
+
+  .vk:hover {
+    background: url(../svg/vk-hover.svg) no-repeat;
+  }
+
+  .youtube {
+    background: url(../svg/youtube.svg) no-repeat;
+  }
+
+  .youtube:hover {
+    background: url(../svg/youtube-hover.svg) no-repeat;
+  }
+
+  .twitter {
+    background: url(../svg/twitter.svg) no-repeat;
+  }
+
+  .twitter:hover {
+    background: url(../svg/twitter-hover.svg) no-repeat;
+  }
+
+  .insta {
+    background: url(../svg/insta.svg) no-repeat;
+  }
+
+  .insta:hover {
+    background: url(../svg/insta-hover.svg) no-repeat;
+  }
+
+  .odnoklassniki {
+    background: url(../svg/odnoklassniki.svg) no-repeat;
+  }
+
+  .odnoklassniki:hover {
+    background: url(../svg/odnoklassniki-hover.svg) no-repeat;
+  }
+
+  .payments {
+    margin-bottom: 50px;
+  }
+
+  /* --- Social icons end --- */
+
+
+  /* --- Copyright --- */
+
+  .copyright {
+    padding-top: 30px;
+    border-top: 1px solid #828282;
+  }
+
+  .copyright a {
+    font-size: 15px;
+    line-height: 1.2;
+    color: #828282;
+  }
+
+  .copyright a:hover {
+    text-decoration: underline;
+  }
+
+  .copyright a:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  /* --- Copyright end --- */
+
+}
+
+@media (min-width: 576px) {
+
+}
+
+
+@media (min-width: 768px) {
+
+  .footer {
+    padding: 60px 0px 50px;
+  }
+
+  .footer__container {
+    flex-direction: row;
+    gap: 0px 30px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: unset;
+  }
+
+  .footer a {
+    justify-content: unset;
+  }
+
+  section .title {
+    margin-bottom: 20px;
+  }
+
+  /* --- Social icons --- */
+
+  .social {
+    flex-direction: row;
+  }
+
+  footer a.number {
+    font-size: 32px;
+  }
+
+  /* --- Copyright --- */
+
+  .copyright__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .copyright a:not(:last-child) {
+    margin-bottom: 0px;
+}
+
+  /* --- Copyright end --- */
+
+}
+  
+@media (min-width: 1200px) {
+
+  .footer__container {
+    flex-direction: row;
+    gap: 0px;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+
+  .social {
+    min-width: auto;
+    flex-direction: column;
+  }
+
+  /* --- Number --- */
+
+  .phone {
+    width: auto;
+  }
+
+  /* --- Nubmer --- */
+
+}
+
+
+  
+
+
+
+
+
