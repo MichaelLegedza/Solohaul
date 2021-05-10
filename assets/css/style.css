@@ -387,6 +387,133 @@ h3 {
 }
 
 
+/* ----- Opening adaptive ----- */
+
+@media (min-width: 1px) {
+
+  .opening {
+    padding: 100px 0px 50px;
+    background: url(../img/opening-img.jpg) no-repeat;
+    background-size: cover;
+  }
+
+  .opening__container {
+    position: relative;
+    color: #ffffff;
+  }
+
+  .main__title {
+    white-space: pre;
+  }
+
+  .main__title span {
+    display: block;
+    margin-top: 20px;
+  }
+
+  .opening__inner {
+    max-width: 280px;
+    margin-bottom: 60px;
+  }
+
+  .opening__inner p {
+    margin-bottom: 40px;
+    font-size: 17px;
+  }
+
+  /* ----- Widget block ----- */
+
+  .widget {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .town {
+    margin-bottom: 5px;
+  }
+
+  .town,
+  .temperature {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+
+  .town span {
+    font-size: 17px;
+    line-height: 1.2;
+  }
+
+  .temperature::before {
+    content: '';
+    display: inline-block;
+    width: 30px;
+    height: 26px;
+    background: url(../svg/weather.svg) no-repeat;
+    margin-right: 8px;
+  }
+
+  /* ----- Widget block end ----- */
+
+}
+
+@media (min-width: 768px) {
+
+  .opening__inner {
+    max-width: unset;
+  }
+
+  .main__title {
+    white-space: unset;
+  }
+
+  .opening p {
+    font-size: 24px;
+    margin: 40px 0px 50px;
+  }
+
+  .play-btn {
+    position: relative;
+    bottom: 130px;
+    display: flex;
+  }
+
+  .play-btn img {
+    width: 90px;
+    height: 90px;
+    z-index: 0;
+    cursor: pointer;
+  }
+
+  .weather {
+    position: absolute;
+    right: 50px;
+  }
+
+}
+
+@media (min-width: 1400px) {
+
+  .opening {
+    padding: 170px 0px;
+    background: url(../img/opening-img2.jpg) no-repeat;
+    background-size: cover;
+  }
+
+  .play-btn {
+    position: absolute;
+    top: 30%;
+    right: 15%;
+    bottom: 0;
+  }
+
+  .weather {
+    bottom: -100px;
+  }
+
+}
+
+
 
 /* ----- Footer adaptive ----- */
 
@@ -654,126 +781,5 @@ h3 {
   /* --- Number --- */
 
 }
-
-
-/* ----- Opening adaptive ----- */
-
-@media (min-width: 1px) {
-
-  .opening {
-    padding: 100px 0px 50px;
-    background: url(../img/opening-img.jpg) no-repeat;
-    background-size: cover;
-  }
-
-  .opening__container {
-    color: #ffffff;
-  }
-
-  .main__title {
-    white-space: pre;
-  }
-
-  .main__title span {
-    display: block;
-    margin-top: 20px;
-  }
-
-  .opening__inner {
-    max-width: 280px;
-    margin-bottom: 60px;
-  }
-
-  .opening__inner p {
-    margin-bottom: 40px;
-    font-size: 17px;
-  }
-
-  /* ----- Widget block ----- */
-
-  .widget {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-  
-  .town {
-    margin-bottom: 5px;
-  }
-
-  .town,
-  .temperature {
-    font-size: 24px;
-    line-height: 1.2;
-  }
-
-  .town span {
-    font-size: 17px;
-    line-height: 1.2;
-  }
-
-  .temperature::before {
-    content: '';
-    display: inline-block;
-    width: 30px;
-    height: 26px;
-    background: url(../svg/weather.svg) no-repeat;
-    margin-right: 8px;
-  }
-
-  /* ----- Widget block end ----- */
-
-}
-
-@media (min-width: 768px) {
-
-  .opening__inner {
-    max-width: unset;
-  }
-
-  .main__title {
-    white-space: unset;
-  }
-
-  .opening p {
-    font-size: 24px;
-    margin: 40px 0px 50px;
-  }
-
-  .play-btn {
-    position: relative;
-    bottom: 130px;
-    display: flex;
-  }
-
-  .play-btn img {
-    width: 90px;
-    height: 90px;
-    z-index: 0;
-    cursor: pointer;
-  }
-
-  .weather {
-    position: absolute;
-    right: 5%;
-  }
-
-}
-
-@media (min-width: 1400px) {
-
-  .opening {
-    padding: 170px 0px;
-    background: url(../img/opening-img2.jpg) no-repeat;
-    background-size: cover;
-  }
-
-  .play-btn {
-    left: 250px;
-  }
-
-}
-
-
 
 
