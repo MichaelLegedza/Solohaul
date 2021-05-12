@@ -643,6 +643,7 @@ button img {
     margin-bottom: 30px;
   }
 
+  .items,
   .services__items {
     display: flex;
     flex-wrap: wrap;
@@ -650,6 +651,7 @@ button img {
     gap: 30px 0px;
   }
 
+  .column,
   .items__column {
     max-width: 280px;
     margin: 0 auto;
@@ -725,6 +727,7 @@ button img {
 
 @media (min-width: 768px) {
 
+  .items,
   .services__items {
     flex-direction: row;
     justify-content: space-between;
@@ -762,6 +765,7 @@ button img {
     padding-bottom: 70px;
   }
 
+  .items,
   .services__items {
     flex-direction: row;
     justify-content: space-between;
@@ -1110,6 +1114,32 @@ button img {
 /* ----- Programs end ----- */
 
 
+/* ----- Individual ----- */
+
+
+
+/* ----- Individual end ----- */
+
+@media (min-width: 1px) {
+
+  .individual {
+    padding: 50px 0px 70px;
+    background-color: #F4F7F9;
+  }
+
+  .individual .items__column {
+    color: #ffffff;
+  }
+
+  .individual img {
+    max-width: 100%;
+  }
+
+  .individual .individual-description {
+    color: #333333;
+  }
+
+}
 
 /* ----- Footer adaptive ----- */
 
