@@ -12,6 +12,21 @@
   font-family: 'Montserrat', 'Roboto Slab', sans-serif;
 }
 
+body {
+  min-height: 100%;
+  font-size: 17px;
+  line-height: 1.2;
+}
+
+
+/* ----- Green section ----- */
+
+.section-green {
+  padding: 50px 0px;
+  background-color: #27AE60;
+  color: #ffffff;
+}
+
 
 /* ----- Container ----- */
 
@@ -366,12 +381,12 @@ button img {
     display: flex;
     padding: 34px 15px;
     color: #ffffff;
-    transition: .2s linear;
+    transition: .1s linear;
   }
 
   .list__item:hover {
     background-color: #239C56;
-    transition: .2s linear;
+    transition: .1s linear;
   }
 
   .submenu {
@@ -389,12 +404,13 @@ button img {
   .submenu__item a {
     display: block;
     padding: 18px 30px;
-    background-color: grey;
-    border-bottom: 1px solid #ffffff;
+    background-color: #ffffff;
+    color: #333333;
   }
 
   .submenu__item a:hover {
-    background-color: rgb(151, 151, 151);
+    color: #ffffff;
+    background-color: #27AE60;
   }
 
   /* --- Navigation end --- */
@@ -833,12 +849,6 @@ button img {
 
 @media (min-width: 1px) {
 
-  .transfer {
-    padding: 50px 0px 65px;
-    background-color: #27AE60;
-    color: #ffffff;
-  }
-
   .transfer__container {
     text-align: center;
   }
@@ -909,7 +919,7 @@ button img {
   }
 
   .search:hover::after {
-    width: 100px;
+    width: 105px;
     transition: .2s linear;
   }
 
@@ -930,10 +940,6 @@ button img {
 }
 
 @media (min-width: 768px) {
-
-  .transfer {
-    padding: 50px 0px;
-  }
 
   .transfer__container {
     display: flex;
@@ -965,7 +971,7 @@ button img {
   }
 
   .search::after {
-    transform: translate(-31px, -15px);
+    transform: translate(-35px, -15px);
   }
 
 }
@@ -1159,9 +1165,6 @@ button img {
 /* ----- Individual ----- */
 
 
-
-/* ----- Individual end ----- */
-
 @media (min-width: 1px) {
 
   .individual {
@@ -1235,6 +1238,176 @@ button img {
   }
 
 }
+
+/* ----- Individual end ----- */
+
+
+/* ----- Advantages ----- */
+
+@media (min-width: 1px) {
+
+  .advantages__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .advantages__list img {
+    margin-right: 20px;
+  }
+
+  .advantages__list li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .list__column--right li:last-child {
+    margin-bottom: 0px;
+  }
+
+
+  /* --- Line --- */
+
+  .line {
+    width: 114px;
+    height: 1px;
+    margin: 30px auto;
+    background-color: #ffffff;
+  }
+
+  /* --- Line end --- */
+
+  .selling__title {
+    margin-bottom: 20px;
+  }
+
+}
+
+@media (min-width: 576px) {
+
+  .line {
+    width: 200px;
+    margin: 50px auto;
+  }
+
+}
+
+@media (min-width: 768px) {
+
+  .advantages__list {
+    display: flex;
+    align-items: center;
+    gap: 126px;
+  }
+
+  .list__column {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .advantages__list li {
+    margin-bottom: 0px;
+  }
+
+  .advantages__list li:first-child {
+    max-width: 212px;
+  }
+
+  .advantages__list li {
+    max-width: 260px;
+  }
+
+  .advantages__list li::before {
+    margin-right: 20px;
+  }
+
+  .advantages__list li:not(:last-child) {
+    margin-bottom: 0px;
+  }
+
+  .line {
+    margin: 30px auto;
+  }
+
+  .selling {
+    display: flex;
+    align-items: center;
+  }
+
+  .selling__title {
+    margin-right: 30px;
+    margin-bottom: 0px;
+  }
+
+}
+
+@media (min-width: 992px) {
+
+  .advantages__list {
+    gap: 175px;
+  }
+
+  .list__column {
+    gap: 50px;
+  }
+
+  .line {
+    margin: 50px auto;
+  }
+
+}
+
+@media (min-width: 1200px) {
+
+  .advantages__container {
+    flex-direction: row;
+  }
+
+  .advantages__list {
+    gap: 0px;
+  }
+
+  .list__column--left {
+    margin-right: 50px;
+  }
+
+  .advantages__list::after {
+    content: '';
+    display: inline;
+    height: 114px;
+    width: 1px;
+    margin: 0px 20px;
+    background-color: #ffffff;
+  }
+
+  .line {
+    display: none;
+  }
+
+  .advantages__list li:first-child,
+  .advantages__list li {
+    max-width: unset;
+  }
+
+  .selling {
+    flex-direction: column;
+  }
+
+  .selling__title {
+    margin-bottom: 30px;
+    margin-right: 0px;
+  }
+
+}
+
+
+
+
+/* ----- Advantages end ----- */
+
 
 /* ----- Footer adaptive ----- */
 
@@ -1464,6 +1637,12 @@ button img {
     font-size: 32px;
   }
 
+  /* --- Payments --- */
+
+  .payments button:not(:last-child) {
+    margin-right: 5px;
+  }
+
   /* --- Copyright --- */
 
   .copyright__container {
@@ -1498,8 +1677,6 @@ button img {
   .phone {
     width: auto;
   }
-
-  /* --- Number --- */
 
 }
 
