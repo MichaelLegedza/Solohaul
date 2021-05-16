@@ -18,6 +18,11 @@ body {
   line-height: 1.2;
 }
 
+::-webkit-scrollbar {
+  display: none;
+  width: 0;
+}
+
 
 /* ----- Green section ----- */
 
