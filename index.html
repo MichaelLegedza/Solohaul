@@ -456,36 +456,40 @@
 
     <section class="question">
       <div class="container question__container">
-        <h2 class="question__title">Остались вопросы?</h2>
-        <div class="question__content">
-          
           <div class="google-map">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2879.334773196397!2d39.609070715672225!3d43.80741495046246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40f42f19dc49d479%3A0xcc742be058c76a52!2z0KHQvtC70L7RhdCw0YPQuyDQn9Cw0YDQui4g0K3QutC-INCf0LDRgNC6ICLQl9C10LvRkdC90LDRjyDQv9C-0LvRj9C90LAiLg!5e0!3m2!1sru!2sru!4v1621173971557!5m2!1sru!2sru" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2879.334773196397!2d39.609070715672225!3d43.80741495046246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40f42f19dc49d479%3A0xcc742be058c76a52!2z0KHQvtC70L7RhdCw0YPQuyDQn9Cw0YDQui4g0K3QutC-INCf0LDRgNC6ICLQl9C10LvRkdC90LDRjyDQv9C-0LvRj9C90LAiLg!5e0!3m2!1sru!2sru!4v1621173971557!5m2!1sru!2sru" width="629" height="628" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
           </div>
 
           <form action="" method="get" class="question__form">
+            <h3 class="question__title">Остались вопросы?</h3>
+
             <div class="form__name field">
-              <input type="text" name="name" id="name">
+              <input type="text" name="name" id="name" required>
               <label for="name">Имя</label>
+              <div class="placeholder-error placeholder-error--name">Укажите имя</div>
             </div>
+
             <div class="form__email field">
-              <input type="text" name="name" id="email">
+              <input type="text" name="name" id="email" required>
               <label for="email">Электронная почта</label>
-              <div class="placeholder-error">Укажите телефон</div>
+              <div class="placeholder-error placeholder-error--email">Укажите email</div>
             </div>
+
             <div class="form__number field">
-              <input type="text" name="name" id="number">
-              <label for="number">Имя</label>
+              <input type="text" name="name" id="number" required>
+              <label for="number">Телефон</label>
+              <div class="placeholder-error placeholder-error--number">Укажите телефон</div>
             </div>
+
             <div class="form__question field">
-              <textarea name="name" id="name" placeholder="Вопрос">
+              <textarea rows="1" name="name" id="name" required placeholder="Вопрос">
 
               </textarea>
+              <div class="placeholder-error placeholder-error--question">Укажите вопрос</div>
             </div>
             <button class="btn btn--green">Отправить</button>
           </form>
 
-        </div>
       </div>
     </section>
 
