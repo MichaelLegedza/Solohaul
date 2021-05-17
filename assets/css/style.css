@@ -2007,7 +2007,7 @@ button img {
 
 
 
-/* ----- About-us html section ----- */
+/* ----- About-us opening ----- */
 
 @media (min-width: 1px) {
 
@@ -2154,6 +2154,20 @@ button img {
 
   .bread-crumbs {
     top: -33%;
+  }
+
+}
+
+/* ----- About-us about -----  */
+
+@media (min-width: 1px) {
+
+  .about-us .about__container img::after {
+    content: '';
+    display: flex;
+    width: 150px;
+    height: 1px;
+    background-color:#27AE60;
   }
 
 }
