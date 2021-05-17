@@ -88,7 +88,7 @@ body {
 @media (min-width: 1200px) {
 
   .container {
-    padding: 0px 20px;
+    padding: 0px;
   }
 
   .container {
@@ -165,6 +165,10 @@ button img {
 .btn.btn--border {
   margin: 0 auto;
   border: 1px solid #ffffff;
+}
+
+.btn.btn--form {
+  margin: 0 auto;
 }
 
 .btn:hover {
@@ -1521,6 +1525,17 @@ button img {
 
 @media (min-width: 1px) {
 
+  .question__container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    padding: 0px;
+  }
+
+}
+
+@media (min-width: 1px) {
+
   .question {
     padding: 70px 0px 90px;
     background-color: #F4F7F9;
@@ -1528,10 +1543,12 @@ button img {
 
   .question__container {
     display: flex;
-    column-gap: 20px;
+    justify-content: space-between;
+    padding: 0px;
   }
 
   .question__form {
+    min-width: 465px;
     padding: 40px;
     background-color: #ffffff;
     box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.05);
@@ -1545,7 +1562,7 @@ button img {
 
   .field {
     position: relative;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
   }
 
   /* --- Input --- */
@@ -1562,21 +1579,25 @@ button img {
     margin-bottom: 5px;
   }
 
-  input:focus:invalid {
+  input:focus:invalid,
+  textarea:focus:invalid {
     border-bottom: 2px solid #AF261C;
   }
 
-  input:focus ~ .placeholder-error {
+  input:focus ~ .placeholder-error,
+  textarea:focus ~ .placeholder-error {
     opacity: 1;
   }
 
-  input:valid ~ .placeholder-error {
+  input:valid ~ .placeholder-error,
+  textarea:valid ~ .placeholder-error {
     opacity: 0;
   }
 
-  input:valid,
   input:focus,
-  textarea:focus {
+  input:valid,
+  textarea:focus,
+  textarea:valid {
     border-bottom: 2px solid #27AE60;
   } 
 
@@ -1593,7 +1614,9 @@ button img {
   }
 
   input:focus ~ label,
-  input:valid ~ label {
+  input:valid ~ label,
+  textarea:focus ~ label,
+  textarea:valid ~ label {
     font-size: 15px;
     padding: 0px;
     top: -20px;
@@ -1605,6 +1628,11 @@ button img {
     font-size: 13px;
     line-height: 1.2;
     color: #AF261C;
+  }
+
+  textarea {
+    width: 385px;
+    resize: none;
   }
 
 }
