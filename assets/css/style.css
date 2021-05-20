@@ -2374,7 +2374,7 @@ button img {
       background-size: cover;
     }
 
-    .price__list {
+    .price__sub-list {
       display: flex;
       justify-content: space-between;
       margin-bottom: 55px;
@@ -2391,7 +2391,7 @@ button img {
       border-radius: 8px;
     }
 
-    .price__list span {
+    .price__sub-list span {
       display: block;
       font-size: 15px;
       line-height: 1.3;
@@ -2420,7 +2420,7 @@ button img {
       margin-bottom: 30px;
     }
 
-    .price__list {
+    .price__sub-list {
       justify-content: unset;
       gap: 0px 30px;
     }
@@ -2431,7 +2431,7 @@ button img {
       padding: 15px 40px;
     }
 
-    .price__list span {
+    .price__sub-list span {
       font-size: 24px;
     }
 
