@@ -598,12 +598,16 @@ button img {
   }
 
   .about img {
-    min-width: 50%;
+    min-width: 90%;
     height: auto;
   }
 }
 
 @media (min-width: 768px) {
+
+  .about__inner {
+    max-width: 728px;
+  }
 
   .about p {
     font-size: 17px;
@@ -1418,15 +1422,7 @@ button img {
 @media (min-width: 1px) {
 
   .gallery {
-    padding: 50px 70px;
-  }
-
-}
-
-@media (min-width: 1px) {
-
-  .gallery {
-    padding: 70px 0px 90px;
+    padding: 50px 0px 65px;
   }
 
   .gallery__container {
@@ -1483,6 +1479,10 @@ button img {
 }
 
 @media (min-width: 1200px) {
+
+  .gallery {
+    padding: 70px 0px 90px;
+  }
 
   .gallery__container {
     max-width: 1140px;
@@ -2005,6 +2005,7 @@ button img {
 
 
 
+  /* ----- About-us html start ----- */
 
 
 /* ----- About-us opening ----- */
@@ -2027,7 +2028,7 @@ button img {
     display: flex;
   }
 
-  .bread-crumbs li:first-child::after {
+  .bread-crumbs li:not(:last-child)::after {
     content: '';
     display: inline-block;
     width: 5px;
@@ -2162,15 +2163,357 @@ button img {
 
 @media (min-width: 1px) {
 
-  .about-us .about__container img::after {
-    content: '';
-    display: flex;
+  .about-us.about {
+    padding-bottom: 0px;
+  }
+
+  .about-us .about__container {
+    flex-direction: column;
+    align-items: center;
+    gap: 0px;
+  }
+
+  .about-us .about__description {
+    margin-bottom: 30px;
+    font-size: 17px;
+  }
+
+  .green-underline {
     width: 150px;
     height: 1px;
-    background-color:#27AE60;
+    margin: 30px auto;
+    background-color: #27AE60;
   }
 
 }
 
+@media (min-width: 768px) {
+
+  .about-us .about__description {
+    font-size: 24px;
+  }
+
+  .green-underline {
+    width: 300px;
+    margin: 40px auto;
+  }
+
+}
+
+@media (min-width: 1200px) {
+
+  .about-us .about__inner {
+    display: flex;
+    max-width: unset;
+    gap: 0px 50px;
+  }
+
+  .about__inner--reverse {
+    flex-direction: row-reverse;
+  }
+
+  .about__column {
+    max-width: 532px;
+  }
+
+  .about-us .about__inner img {
+    width: 562px;
+    height: 340px;
+  }
+
+  .green-underline {
+    margin: 50px auto;
+  }
+
+}
+
+/* ----- About-us about end -----  */
+
+
+/* ----- Park-map -----  */
+
+@media (min-width: 1px) {
+
+  .park-map {
+    padding: 50px 0px;
+    background-color: #00B254;
+  }
+
+  .park-map__container {
+    text-align: center;
+  }
+
+  .park-map img {
+    width: 280px;
+    height: 210px;
+  }
+
+}
+
+@media (min-width: 576px) {
+
+  .park-map img {
+    width: 536px;
+    height: auto;
+  }
+
+}
+
+@media (min-width: 576px) {
+
+  .park-map img {
+    width: 536px;
+  }
+
+}
+
+@media (min-width: 768px) {
+
+  .park-map img {
+    width: 728px;
+  }
+
+}
+
+@media (min-width: 1200px) {
+
+  .park-map img {
+    width: 1024px;
+  }
+
+}
+
+/* ----- Park-map end -----  */
+
+
+  /* ----- About-us html end -----  */
+
+
+
+
+
+  /* ----- Service html ----- */
+
+/* ----- Service opening ----- */
+
+@media (min-width: 1px) {
+
+  .service.opening {
+    background: url(../img/service-bg3.png) no-repeat;
+    background-size: cover;
+  }
+
+}
+
+@media (min-width: 576px) {
+
+  .service.opening {
+    background: url(../img/service-bg2.png) no-repeat;
+    background-size: cover;
+  }
+
+}
+
+@media (min-width: 992px) {
+
+  .service .bread-crumbs a {
+    color: #ffffff;
+  }
+
+  .bread-crumbs li:first-child::after {
+    background: url(../svg/arrow-right-white.svg) no-repeat;
+  }
+
+}
+
+@media (min-width: 1200px) {
+
+  .service.opening {
+    background: url(../img/service-bg.png) no-repeat;
+    background-size: cover;
+  }
+
+  .service .bread-crumbs a {
+    color: #333333;
+  }
+
+  .bread-crumbs li::after {
+    background: url(../svg/arrow-right.svg) no-repeat;
+  }
+
+}
+
+/* ----- Service opening end ----- */
+
+/* ----- Service services ----- */
+
+@media (min-width: 1px) {
+
+  .service.services {
+    padding: 50px 0px;
+  }
+
+}
+
+@media (min-width: 1200px) {
+
+  .service.services {
+    padding: 70px 0px;
+  }
+
+}
+
+/* ----- Service services end ----- */
+
+  /* ----- Service-airship ----- */
+
+  @media (min-width: 1px) {
+
+    .service-airship.about-us.opening {
+      background: url(../img/airship3.png) top no-repeat;
+      background-size: cover;
+    }
+
+    .price__list {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 55px;
+    }
+
+    .price__item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-width: 131px;
+      min-height: 79px;
+      padding: 15px 20px;
+      background: rgba(255, 255, 255, 0.2);
+      border-radius: 8px;
+    }
+
+    .price__list span {
+      display: block;
+      font-size: 15px;
+      line-height: 1.3;
+      font-weight: 600;
+    }
+
+    .price__item .time {
+      margin-bottom: 10px;
+      font-weight: 300;
+    }
+
+  }
+
+  @media (min-width: 576px) {
+
+    .service-airship.about-us.opening {
+      background: url(../img/airship2.png) top no-repeat;
+      background-size: cover;
+    }
+
+  }
+
+  @media (min-width: 768px) {
+
+    .service-airship.about-us .opening__inner p {
+      margin-bottom: 30px;
+    }
+
+    .price__list {
+      justify-content: unset;
+      gap: 0px 30px;
+    }
+
+    .price__item {
+      min-width: 225px;
+      min-height: 102px;
+      padding: 15px 40px;
+    }
+
+    .price__list span {
+      font-size: 24px;
+    }
+
+    .service-airship .bread-crumbs a {
+      color: #ffffff;
+    }
+
+  }
+
+  @media (min-width: 992px) {
+
+    .service-airship .bread-crumbs {
+      top: -14%;
+    }
+
+  }
+
+  @media (min-width: 1200px) {
+
+    .service-airship.about-us.opening {
+      background: url(../img/airship.png) top no-repeat;
+      background-size: cover;
+    }
+
+    .service-airship .bread-crumbs {
+      top: -25%;
+    }
+
+    .service-airship .bread-crumbs a {
+      color: #333333;
+    }
+
+    .service-airship .bread-crumbs li:not(:last-child)::after {
+      background: url(../svg/arrow-right.svg);
+    }
+
+  }
+
+  @media (min-width: 1400px) {
+
+    .service-airship .bread-crumbs {
+      top: -31%;
+    }
+
+  }
+
+
+  /* ----- Servive-airship end ----- */
+
+
+  /* ----- Ait-travel ----- */
+
+  @media (min-width: 1px) {
+
+    .air-travel {
+      padding: 50px 0px;
+    }
+
+    .air-travel__subtitle {
+      margin-bottom: 30px;
+    }
+
+    .air-travel p {
+      font-size: 15px;
+      line-height: 1.3;
+    }
+
+    .air-travel__content p:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
+    .air-travel__description {
+      font-size: 15px;
+      line-height: 1.3;
+    }
+
+    .air-travel .bold {
+      font-weight: 700;
+    }
+
+  }
+
+  /* ----- Ait-travel end ----- */
 
 
