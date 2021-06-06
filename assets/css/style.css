@@ -2045,6 +2045,7 @@ button img {
 
   .bread-crumbs a:hover {
     text-decoration: underline;
+    color: #27AE60;
   }
 
   .bread-crumbs a:active {
@@ -2481,7 +2482,7 @@ button img {
   /* ----- Servive-airship end ----- */
 
 
-  /* ----- Ait-travel ----- */
+  /* ----- Air-travel ----- */
 
   @media (min-width: 1px) {
 
@@ -2599,5 +2600,116 @@ button img {
 
 
   /* ----- Ait-travel end ----- */
+
+
+  /* ----- News ----- */
+
+  @media (min-width: 1px) {
+
+    .news {
+      position: relative;
+      padding: 80px 0px 70px;
+      background-color: #f5f5f5;
+    }
+
+    .news .bread-crumbs {
+      top: 15px;
+    }
+
+    .news .bread-crumbs__list a {
+      color: #333333;
+    }
+
+    .news .bread-crumbs li:not(:last-child)::after {
+      background: url(../svg/arrow-right.svg);
+    }
+
+    .news__title {
+      margin-bottom: 30px;
+    }
+
+    .news__slider {
+      display: flex;
+      flex-direction: column;
+      margin: 0px auto 20px;
+      max-width: 280px;
+      padding: 30px 20px 25px;
+      background-color: #ffffff;
+      color: #333333;
+      border-radius: 8px;
+    }
+
+    .news__slider:not(:last-child) {
+      margin-bottom: 28px;
+    }
+
+    .news img {
+      max-width: 240px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+    }
+
+    .news .date, 
+    .news h3,
+    .news p {
+      margin-bottom: 20px;
+    }
+
+    .news span {
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+
+    .news p {
+      font-size: 15px;
+      line-height: 1.3;
+      -ms-text-overflow: ellipsis;
+      -o-text-overflow: ellipsis;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      -ms-line-clamp: 3;
+      -webkit-line-clamp: 3;
+      line-clamp: 3;
+      display: -webkit-box;
+      display: box;
+      word-wrap: break-word;
+      -webkit-box-orient: vertical;
+      box-orient: vertical;
+    }
+
+    .news .arrow {
+      margin-left: 0;
+    }
+
+    .arrow a {
+      display: inline-flex;
+    }
+
+    .more {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+
+    .more a {
+      margin-right: 10px;
+      color: #333333;
+    }
+
+    .more a:hover {
+      text-decoration: underline;
+      color: #27AE60;
+    }
+
+  }
+
+
+  @media (min-width: 576px) {
+
+
+
+  }
+
+
 
 
