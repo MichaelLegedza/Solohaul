@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Slab:wght@100;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 /* ----- Common Styles ----- */
 
@@ -2620,8 +2620,18 @@ button img {
       color: #333333;
     }
 
+    .news .bread-crumbs__list a:hover {
+      color: #27AE60;
+    }
+
     .news .bread-crumbs li:not(:last-child)::after {
       background: url(../svg/arrow-right.svg);
+    }
+
+    .date {
+      font-size: 13px;
+      line-height: 15px;
+      color: #828282;
     }
 
     .news__title {
@@ -2643,10 +2653,42 @@ button img {
       margin-bottom: 28px;
     }
 
+    .news__subtitle {
+      transition: .2s linear;
+    }
+
+    .slider-item__content {
+      cursor: pointer;
+    }
+
+    .slider-item__content:hover .news__subtitle {
+      color: #27AE60;
+      transition: .2s linear;
+    }
+
+    .slider-item__content:hover .more a {
+      color: #27AE60;
+      text-decoration: unset;
+      transition: .2s linear;
+    }
+
+    .slider-item__content:hover .arrow {
+      background: url(../svg/arrow-active.svg) no-repeat;
+      transition: .2s linear;
+    }
+
     .news img {
       max-width: 240px;
       margin-bottom: 20px;
       border-radius: 8px;
+      cursor: pointer;
+      transform: scale(1);
+      transition: .2s linear;
+    }
+
+    .news img {
+      transform: scale(1);
+      transition: .2s linear;
     }
 
     .news .date, 
@@ -2693,7 +2735,10 @@ button img {
 
     .more a {
       margin-right: 10px;
+      font-size: 15px;
+      line-height: 18px;
       color: #333333;
+      transition: .2s linear;
     }
 
     .more a:hover {
@@ -2701,12 +2746,136 @@ button img {
       color: #27AE60;
     }
 
+
+
+    .btn-flip {
+      width: 7.5px;
+      height: 12px;
+    }
+
+    .btn-flip--left {
+      background: url(../svg/flip-left.svg) no-repeat;
+      margin-right: 20px;
+    }
+
+    .btn-flip--right {
+      background: url(../svg/flip-right.svg) no-repeat;
+      margin-left: 20px;
+    }
+
+    .slide__number {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .slide__number span {
+      padding: 7px 11px;
+      font-size: 13px;
+      line-height: 17px;
+      border-radius: 4px;
+      margin-bottom: 0px;
+      font-family: 'Lato', sans-serif;
+      cursor: pointer;
+    }
+
+    .slide__number span.current {
+      background-color: #27AE60;
+      color: #ffffff;
+    }
+
   }
 
 
-  @media (min-width: 576px) {
+  @media (min-width: 768px) {
 
+    .news img {
+      max-width: 230px;
+      min-height: 293px;
+      margin-bottom: 0px;
+      border-radius: 0px;
+    }
+    
+    .news__slider {
+      margin: 0;
+      padding: 0px;
+      max-width: unset;
+    }
 
+    .slider-item__content {
+      box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    .news__column {
+      padding: 30px 25px 0px;
+    }
+
+    .slider-item__content {
+      display: flex;
+    }
+    
+    .news__slider figure {
+      display: flex;
+    }
+
+    .date {
+      font-size: 15px;
+      line-height: 18px;
+    }
+
+    .news .news__description {
+      margin-bottom: 40px;
+      font-size: 18px;
+      line-height: 21px;
+    }
+
+    .more .arrow {
+      position: static;
+      transform: translate(0px, 0px);
+    }
+
+    .slide__number {
+      padding-top: 10px;
+    }
+
+    .slide__number span {
+      font-size: 17px;
+      line-height: 22px;
+      padding: 10px 15px;
+    }
+
+  }
+
+  @media (min-width: 1200px) {
+
+    .news img {
+      max-width: 361px;
+      min-height: 300px;
+      margin-bottom: 0px;
+      border-radius: 0px;
+    }
+
+    .news__column {
+      padding: 30px 20px 20px 40px;
+    }
+
+    .news p {
+      -ms-text-overflow: unset;
+      -o-text-overflow: unset;
+      text-overflow: unset;
+      overflow: hidden;
+      -ms-line-clamp: 0;
+      -webkit-line-clamp: 0;
+      line-clamp: 0;
+      display: inline-block;
+      word-wrap: unset;
+      -webkit-box-orient: unset;
+      box-orient: unset;
+    }
+
+    .news .news__description {
+      margin-bottom: 30px;
+    }
 
   }
 
