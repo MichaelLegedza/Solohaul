@@ -3066,5 +3066,168 @@ button img {
   
 
 
+  /* ----- Contacts ----- */
+
+  @media (min-width: 1px) {
+
+    .maps__container {
+      display: flex;
+      justify-content: center;
+    }
+
+    .contacts .bread-crumbs {
+      position: relative;
+      top: 15px;
+    }
+
+    .contacts .bread-crumbs a {
+      color: #333333;
+    }
+
+    .contacts .bread-crumbs li:not(:last-child)::after {
+      background: url(../svg/arrow-right.svg);
+    }
+
+
+    h2.contacts__title {
+      margin: 45px 0px 20px 0px;
+    }
+
+    p.contacts__description {
+      margin-bottom: 50px;
+      font-size: 24px;
+      line-height: 31px;
+    }
+
+    .contacts__content {
+      margin-bottom: 50px;
+    }
+
+    .contacts__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      max-width: 305px;
+      margin: 0px auto 40px;
+    }
+
+    .contacts__item:not(:last-child) {
+      margin-bottom: 40px;
+    }
+
+    .contacts__item img {
+      margin-bottom: 30px;
+    }
+
+    h3.contacts__subtitle {
+      margin-bottom: 15px;
+      font-size: 24px;
+      line-height: 31px;
+    }
+
+    .contacts__item a,
+    .contacts__item p {
+      font-size: 15px;
+      line-height: 1.3;
+      color: #333333;
+      margin-bottom: 10px;
+    }
+
+    /* --- Maps --- */
+
+    .maps {
+      padding: 50px 0px 70px 0px;
+      background-color: #F4F7F9;
+    }
+
+    .maps .question__form {
+      padding: 40px 20px 0px;
+      margin: 0px;
+      border-radius: 0px;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+    }
+
+    .maps .google-map {
+      margin: 0px auto;
+    }
+
+  }
+
+  @media (min-width: 576px) {
+
+    .maps .question__form {
+      padding: 40px 50px 50px;
+      margin: 0px;
+      border-radius: 0px;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+    }
+
+  }
+
+
+  @media (min-width: 768px) {
+
+    h2.contacts__title {
+      margin: 65px 0px 20px 0px;
+      font-size: 56px;
+    }
+
+    .contacts__content {
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 50px;
+      justify-content: space-around;
+    }
+
+    .contacts__item {
+      max-width: 270px;
+      min-width: 270px;
+      margin: 0px;
+    }
+
+  }
+
+  @media (min-width: 950px) {
+
+    .contacts__content {
+      column-gap: 100px;
+    }
+
+  }
+
+  @media (min-width: 1200px) {
+
+    .contacts__content {
+      column-gap: 0px;
+      justify-content: unset;
+    }
+
+    .contacts__item {
+      padding: 0px 25px;
+    }
+
+    .contacts__item:not(:last-child) {
+      border-right: 1px solid #BDBDBD;
+    }
+
+    /* --- Maps --- */
+
+    .maps .google__map {
+      margin-right: 15px;
+    }
+
+    .maps .more__question {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+
+    .maps .question__form {
+      border-radius: 8px;
+    }
+
+  }
 
 
