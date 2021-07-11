@@ -3231,3 +3231,92 @@ button img {
   }
 
 
+  /* --- Cafe --- */
+
+  @media (min-width: 1px) {
+
+    .cafe.opening {
+      background: url(../img/cafe-bg-2.jpg);
+    }
+
+    .cafe h1.main__title {
+      margin-bottom: 20px;
+    }
+
+    .cafe .opening__inner p {
+      margin-bottom: 30px;
+    }
+
+    .cafe .play-btn {
+      display: none;
+    }
+
+    .cafe .weather {
+      margin-left: auto;
+    }
+
+    .cafe .air-travel__content {
+      padding-bottom: 0px;
+      margin-bottom: 30px;
+    }
+
+    .cafe .air-travel__content li {
+      font-size: 15px;
+      line-height: 19.5px;
+      color: #333333;
+    }
+
+    .cafe .air-travel__content li:not(:last-child) {
+      margin-bottom: 20px;
+    }
+
+    .cafe img {
+      display: flex;
+      width: 280px;
+      height: 400px;
+      margin: 0 auto;
+    }
+
+  }
+
+  /* --- Cafe end --- */
+
+  /* --- Menu-dishes */
+
+  @media (min-width: 1px) {
+
+    .menu-dishes__subtitle {
+      margin-bottom: 30px;
+    }
+
+    .menu-dishes__list {
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.06);
+      border-radius: 8px;
+    }
+
+    .menu-dishes__list img {
+      width: 280px;
+      height: 360px;
+      margin-bottom: 30px;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+    }
+
+    .menu-dishes__item {
+      padding: 0px 20px 40px;
+    }
+
+    .menu-dishes__description {
+      font-size: 15px;
+      line-height: 19.5px;
+      color: #333333;
+    }
+
+    .menu-dishes .slider {
+      margin: 40px 0px 70px;
+    }
+
+  }
+
+
+  /* --- Menu-dishes end */
