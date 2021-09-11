@@ -3236,7 +3236,12 @@ button img {
   @media (min-width: 1px) {
 
     .cafe.opening {
-      background: url(../img/cafe-bg-2.jpg);
+      background: url(../img/cafe-bg-2.jpg) no-repeat;
+      background-size: cover;
+    }
+
+    .cafe.opening .bread-crumbs a {
+      color: #ffffff;
     }
 
     .cafe h1.main__title {
@@ -3277,6 +3282,75 @@ button img {
       margin: 0 auto;
     }
 
+    .cafe img {
+      width: 100%;
+      height: auto;
+    }
+
+    .first-img {
+      display: none;
+    }
+
+  }
+
+  @media (min-width: 768px) {
+
+    .cafe__container {
+      display: flex;
+      flex-direction: row-reverse;
+      column-gap: 25px;
+    }
+
+    .cafe__info {
+      max-width: 650px;
+    }
+
+    .cafe__container img {
+      width: 361px;
+      height: 100%;
+    }
+
+    .cafe .air-travel__content li {
+      font-size: 17px;
+      line-height: 22px;
+    }
+
+  }
+
+  @media (min-width: 1200px) {
+
+    .cafe .bread-crumbs {
+      top: -16%;
+    }
+
+    .cafe__container img {
+      width: 440px;
+    }
+
+  }
+
+  @media (min-width: 1400px) {
+
+    .cafe.opening .bread-crumbs {
+      top: -33%;
+    }
+
+    .cafe__container img {
+      width: 562px;
+      height: 763px;
+      border-radius: 8px;
+    }
+
+    .first-img {
+      display: block;
+    }
+
+    .first-img img {
+      width: 542px;
+      height: 290px;
+      margin-bottom: 40px;
+    }
+
   }
 
   /* --- Cafe end --- */
@@ -3284,6 +3358,11 @@ button img {
   /* --- Menu-dishes */
 
   @media (min-width: 1px) {
+
+    .menu-dishes__container {
+      max-width: 580px;
+      text-align: center;
+    }
 
     .menu-dishes__subtitle {
       margin-bottom: 30px;
@@ -3296,7 +3375,7 @@ button img {
 
     .menu-dishes__list img {
       width: 280px;
-      height: 360px;
+      height: 320px;
       margin-bottom: 30px;
       border-top-left-radius: 8px;
       border-top-right-radius: 8px;
@@ -3314,6 +3393,80 @@ button img {
 
     .menu-dishes .slider {
       margin: 40px 0px 70px;
+    }
+
+  }
+
+  @media (max-width: 768px) {
+
+    .menu-dishes__list:not(:last-child) {
+      margin-bottom: 25px;
+    }
+
+  }
+
+  @media (min-width: 768px) {
+
+    .cafe.opening {
+      background: url(../img/cafe-bg.jpg) no-repeat;
+      background-size: cover;
+    }
+
+    .menu-dishes__container {
+      max-width: unset;
+      text-align: unset;
+    }
+
+    .menu-dishes__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: space-between;
+    }
+
+    .menu-dishes__list {
+      max-width: 354px;
+    }
+
+    .menu-dishes__list img {
+      width: 354px;
+    }
+
+  }
+
+  @media (min-width: 992px) {
+
+    .menu-dishes__container {
+      max-width: 960px;
+    }
+
+  }
+
+  @media (min-width: 1200px) {
+
+    .menu-dishes {
+      padding-bottom: 90px;
+    }
+
+    .menu-dishes__container {
+      max-width: 1140px;
+    }
+
+    .menu-dishes__wrapper {
+      gap: 20px 0px;
+    }
+
+    .menu-dishes__list {
+      max-width: 562px;
+    }
+
+    .menu-dishes__item {
+      padding: 0px 40px 40px;
+    }
+
+    .menu-dishes__list img {
+      width: 562px;
+      height: 360px;
     }
 
   }
